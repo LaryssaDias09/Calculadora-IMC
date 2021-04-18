@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    display: flex;
+    background-color: #F5F5F5;
+}
+
+/*-----Parte esquerda------*/
+.left_side{
+    width: 52%;
+    background-color: #12334F;
+}
+
+.text{
+    margin-top: 14%;
+    margin-left: 20%;
+    margin-right: 10%;
+    max-width: 391px;
+}
+
+.image{
+    margin-left: 20%;
+    margin-right: 10%;
+    height: 60%;
+    overflow: hidden;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+/*-----Parte direita------*/
+.right_side{
+    width: 48%;
+}
+
+.form{
+    width:80%;
+    margin: 20% auto;
+}
+
+.input_block{
+    margin-bottom: 56px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    margin-bottom: 8px;
+}
+
+input{
+    height: 64px;
+
+    background-color: #F5F8FA;
+    
+    border-radius: 20px;
+    border: 2px solid #205F96;
+
+    outline: none;
+
+    padding-left: 32px;
+
+    /*fonte*/
+    font: normal normal 1.5em 'Poppins', sans-serif;
+    color: #4B4B4B;
+}
+
+
+/*-----Títulos e corpo------*/
+
+.title1{
+    font-weight: 600;
+    font-size: 3em;
+    line-height: 110%;
+
+    color:#F5F5F5;
+}
+
+.title2{
+    font-size: 1.5em;
+    color: #12334F;
+}
+
+p.body1{
+    font-size: 1.12em;
+    line-height: 140%;
+
+    color: #F5F8FA;
+
+    margin-top: 8px;
+
+}
+
+/*-----Links e botões------*/
+
+.primary_button{
+    width: 100%;
+    height: 72px;
+    padding: 0;
+
+    font: normal 600 1.12em 'Poppins', sans-serif;
+
+    background-color: #205F96;
+    border-radius: 20px;
+    border: none;
+    color: #fff;
+
+    margin-top: 16px;
+
+        
+}
+
+.primary_button:hover{
+    background-color: #153e63;
+}
+
+
+/*====== Responsive ====== */
+
+@media (max-width: 425px){
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left_side{
+        display: flex;
+        width: 100%;
+        height: 50%;
+    }
+
+    .image{
+        display: none;
+    }
+
+    .text{
+        margin: 15%;
+        
+        max-width: 80%;
+    }
+
+
+    .right_side{
+        width: 100%;
+    }
+
+    .input_block{
+        margin-bottom: 40px;
+}

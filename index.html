@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+
+    <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <link href = "https://fonts.googleapis.com/css2? family = Poppins: wght @ 400; 600 & display = swap " rel =" stylesheet ">
+
+</head>
+<body>
+    <section class="left_side">
+        <div class="text" id="res">
+            <h1 class="title1">Calcule seu IMC</h1>
+            <p class="body1" >Aqui você pode calcular seu IMC, basta preencher os dados no campo ao lado</p>
+        </div>
+        <div class="image">
+            <img src="images/illustration_calculator.svg" alt="ilustração de um homem e uma calculadora">
+        </div>
+    </section>
+    
+    <section class= "right_side">
+        <!--<div> 
+            Digite a velocidade: <input type="number" id="txtveloc" />
+            <input type="button" value="Calcular" onclick="calcular()" />
+          </div>-->
+        <div class="form">
+            <div class="input_block">
+                <h2 class= title2>Peso</h2>
+                <input type="number" id="weight_value" name="weight_value">
+            </div>
+
+            <div  class="input_block">
+                <h2 class= title2>Altura</h2>
+                <input type="number" id="height_value" name="height_value">
+            </div>
+
+            <input type="button" value="Calcular" class="primary_button" onclick="calcular()" />
+           
+            
+        </div>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
